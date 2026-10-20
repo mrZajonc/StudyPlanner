@@ -1,0 +1,71 @@
+/* StudyPlaner – design tokens v1.0 (październik 2026)
+   Źródło: Księga identyfikacji wizualnej, rozdz. 5. Wartości CMYK – patrz księga (orientacyjne). */
+
+:root {
+  /* Kolory przewodnie */
+  --sp-ink: #0A0A0B;            /* czerń – tekst i znak w wersji jasnej */
+  --sp-white: #FFFFFF;          /* biel – tło wersji jasnej, tekst w wersji ciemnej */
+
+  /* Akcent */
+  --sp-accent: #0033A0;         /* granat – „teraz”, główne CTA, linki (tylko na jasnym tle) */
+  --sp-accent-on-dark: #6B8FE8; /* granat jasny – akcent na ciemnym tle */
+  --sp-accent-10: #E6ECF7;      /* tło wyróżnień na jasnym tle */
+
+  /* Neutralne */
+  --sp-graphite: #1B1C20;       /* powierzchnie ciemne */
+  --sp-graphite-2: #2A2C33;     /* linie na ciemnym */
+  --sp-grey-600: #5A5F6B;       /* tekst drugorzędny na jasnym (6.39:1) */
+  --sp-grey-400: #9A9FAA;       /* tekst drugorzędny na ciemnym */
+  --sp-grey-200: #E3E5EA;       /* linie, podziały */
+  --sp-grey-50: #F4F5F7;        /* tła sekcji */
+
+  /* Funkcyjne – wyłącznie stany interfejsu, zawsze z ikoną lub słowem */
+  --sp-change: #C42B1C;         /* zmiana / odwołane */
+  --sp-warning: #A65800;
+  --sp-confirmed: #1E7F45;
+
+  /* Typografia (OFL 1.1) */
+  --sp-font-display: "Inter Display", "Inter", system-ui, Arial, sans-serif;
+  --sp-font-text: "Inter", system-ui, Arial, sans-serif;
+  --sp-display: 700 48px/52px var(--sp-font-display);   /* letter-spacing: -0.02em */
+  --sp-h1: 700 32px/38px var(--sp-font-display);        /* -0.015em */
+  --sp-h2: 600 24px/30px var(--sp-font-display);        /* -0.01em */
+  --sp-h3: 600 18px/24px var(--sp-font-text);
+  --sp-body: 400 16px/24px var(--sp-font-text);
+  --sp-small: 400 14px/20px var(--sp-font-text);
+  --sp-label: 600 12px/16px var(--sp-font-text);        /* uppercase, +0.06em */
+  /* godziny i numery sal: font-feature-settings: "tnum" 1; */
+
+  /* Odstępy (siatka 8 px) */
+  --sp-space-1: 4px;  --sp-space-2: 8px;  --sp-space-3: 12px; --sp-space-4: 16px;
+  --sp-space-5: 24px; --sp-space-6: 32px; --sp-space-7: 48px; --sp-space-8: 64px;
+
+  /* Kształt */
+  --sp-radius-slot: 12px;       /* slot / karta */
+  --sp-radius-pill: 999px;
+}
+
+/* Wersja ciemna */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --sp-bg: var(--sp-ink);
+    --sp-fg: var(--sp-white);
+    --sp-accent-current: var(--sp-accent-on-dark);
+    --sp-fg-muted: var(--sp-grey-400);
+    --sp-surface: var(--sp-graphite);
+  }
+}
+:root, :root[data-theme="light"] {
+  --sp-bg: var(--sp-white);
+  --sp-fg: var(--sp-ink);
+  --sp-accent-current: var(--sp-accent);
+  --sp-fg-muted: var(--sp-grey-600);
+  --sp-surface: var(--sp-grey-50);
+}
+:root[data-theme="dark"] {
+  --sp-bg: var(--sp-ink);
+  --sp-fg: var(--sp-white);
+  --sp-accent-current: var(--sp-accent-on-dark);
+  --sp-fg-muted: var(--sp-grey-400);
+  --sp-surface: var(--sp-graphite);
+}

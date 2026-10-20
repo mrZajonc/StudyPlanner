@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StudyPlaner – plan zajęć, który wie, co się zmieniło</title>
+<meta name="description" content="Plan zajęć, kalendarz, wiadomości, forum uczelniane, notatki i agent AI w jednym miejscu.">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="icon" href="assets/studyplaner_favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/studyplaner_favicon_180px.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/studyplaner_tokens.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <nav class="wrap" aria-label="Główna nawigacja">
+    <a href="#top" class="brand"><img src="assets/studyplaner_logo_poziomy_negatyw.svg" alt="StudyPlaner" height="28"></a>
+    <ul class="links">
+      <li><a href="#kalendarz">Kalendarz</a></li>
+      <li><a href="#wiadomosci">Wiadomości</a></li>
+      <li><a href="#forum">Forum</a></li>
+      <li><a href="#notatki">Notatki</a></li>
+      <li><a href="#agent">Agent AI</a></li>
+    </ul>
+    <a href="#start" class="btn">Załóż konto</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="hero-text">
+      <h1>Plan zajęć, który wie, co się zmieniło.</h1>
+      <p class="lead">Zmiany sal, terminy, notatki i grupa w jednym miejscu. Sprawdzasz raz i wiesz, gdzie masz być.</p>
+      <div class="cta-row">
+        <a href="#start" class="btn">Załóż konto</a>
+        <a href="#moduly" class="btn btn-quiet">Zobacz, co jest w środku</a>
+      </div>
+    </div>
+
+    <aside class="day" aria-label="Przykładowy plan dnia">
+      <p class="label">Wtorek · 20 października</p>
+      <ol class="route">
+        <li class="past">
+          <time>08:00–09:30</time>
+          <div><strong>Algorytmy</strong><span>s. 112</span></div>
+        </li>
+        <li class="now">
+          <time>09:45–11:15</time>
+          <div><strong>Bazy danych</strong><span>wykład · s. 204</span></div>
+          <em class="now-tag">Teraz</em>
+        </li>
+        <li>
+          <time>12:00–13:30</time>
+          <div>
+            <strong>Programowanie Java</strong>
+            <span class="change">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z"/><path d="M12 10v5M12 18.5v.01"/></svg>
+              Zmiana sali: 0.08, parter
+            </span>
+          </div>
+        </li>
+        <li>
+          <time>14:00–15:30</time>
+          <div><strong>Android</strong><span>projekt · s. 31</span></div>
+        </li>
+      </ol>
+      <p class="source">Informacja od prowadzącego, 7:42.</p>
+    </aside>
+  </section>
+
+  <section class="wrap modules" id="moduly">
+    <h2>Wszystko, czego szukasz między zajęciami</h2>
+    <ul class="mod-list">
+      <li id="kalendarz">
+        <a href="#kalendarz">
+          <h3>Kalendarz</h3>
+          <p>Plan zajęć, terminy projektów i egzaminy. Zmianę sali widzisz, zanim dojdziesz pod drzwi.</p>
+          <span class="meta">Kolokwium z matematyki · czw 09:00</span>
+        </a>
+      </li>
+      <li id="wiadomosci">
+        <a href="#wiadomosci">
+          <h3>Wiadomości prywatne</h3>
+          <p>Rozmowy z grupą i prowadzącymi, osobno od forum.</p>
+          <span class="meta">2 nowe wiadomości od grupy</span>
+        </a>
+      </li>
+      <li id="forum">
+        <a href="#forum">
+          <h3>Forum uczelniane</h3>
+          <p>Ogłoszenia kół naukowych, pytania do wykładowców i wymiana materiałów.</p>
+          <span class="meta">Informatyka · 14 nowych wątków</span>
+        </a>
+      </li>
+      <li id="notatki">
+        <a href="#notatki">
+          <h3>Notatki</h3>
+          <p>Przypięte do przedmiotu i terminu, więc znajdziesz je tam, gdzie ich szukasz.</p>
+          <span class="meta">Bazy danych · wykład 6</span>
+        </a>
+      </li>
+      <li id="agent">
+        <a href="#agent">
+          <h3>Agent AI</h3>
+          <p>Układa plan nauki pod Twoje terminy i tłumaczy zagadnienia krok po kroku.</p>
+          <span class="meta">Do kolokwium zostały 3 dni</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="wrap start" id="start">
+    <h2>Zacznij semestr z planem na dziś</h2>
+    <p>Importujesz plan zajęć i gotowe. Ty decydujesz, kto widzi Twój plan.</p>
+    <a href="#top" class="btn">Załóż konto</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="assets/studyplaner_sygnet_negatyw.svg" alt="" height="24">
+    <span>© 2026 StudyPlaner</span>
+    <span class="foot-links"><a href="#top">Regulamin</a><a href="#top">Prywatność</a><a href="#top">Kontakt</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
