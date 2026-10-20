@@ -1,6 +1,6 @@
 <div align="center">
 
-<table><tr><td align="center" valign="middle"><img src="./studyplaner_sygnet_mono_bialy.svg" alt="Sygnet StudyPlaner" width="66" /></td><td align="center" valign="middle"><img src="./studyplaner_sygnet_mono_bialy.svg" alt="StudyPlaner" width="295" /></td></tr></table>
+<table><tr><td align="center" valign="middle"><img src="./studyplaner_sygnet_mono_bialy.svg" alt="Sygnet StudyPlaner" width="66" /></td><td align="center" valign="middle"><img src="./studyplaner_logotyp_bialy.svg" alt="StudyPlaner" width="295" /></td></tr></table>
 
 ### Plan zajęć, orientacja na kampusie i społeczność akademicka — w jednym miejscu.
 
