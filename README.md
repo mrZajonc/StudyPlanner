@@ -1,10 +1,12 @@
-# StudyPlaner
+<div align="center">
 
-**Plan zajęć, orientacja na kampusie i społeczność akademicka — w jednym miejscu.**
+<table><tr><td align="center" valign="middle"><img src="./studyplaner_sygnet_kolor.svg" alt="Sygnet StudyPlaner" width="66" /></td><td align="center" valign="middle"><img src="./studyplaner_logotyp_czarny.svg" alt="StudyPlaner" width="295" /></td></tr></table>
 
-> **Wiesz, gdzie masz być. I z kim.**
->
-> Proponowana obietnica marki, wymagająca weryfikacji z użytkownikami.
+### Plan zajęć, orientacja na kampusie i społeczność akademicka — w jednym miejscu.
+
+**Wiesz, gdzie masz być. I z kim.**
+
+</div>
 
 **Status projektu:** etap koncepcyjny / planowanie MVP  
 **Platformy docelowe:** przeglądarka internetowa, iOS, Android  
